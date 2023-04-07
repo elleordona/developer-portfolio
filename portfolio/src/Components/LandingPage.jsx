@@ -18,7 +18,7 @@ const LandingPage = () => {
 			<Container fluid>
 				<Row>
 					<Col>
-						<Image src={picOfMe} alt="Elle Ordona" className="img" />
+						<Image src={picOfMe} alt="Elle Ordona" className="img" rounded />
 					</Col>
 					<Col>
 						<h2>Hi, I'm Elle Ordoña. I am Full Stack Developer starting my journey in the tech industry.</h2>
