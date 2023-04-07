@@ -1,7 +1,9 @@
 import './App.css';
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import AppNavbar from './Components/Navbar';
+import LandingPage from './Components/LandingPage';
 
 function App() {
 	return (
@@ -9,7 +11,14 @@ function App() {
 			<header>
 				<AppNavbar />
 			</header>
-			<footer className="center footer"></footer>
+
+			<div className="main">
+				<Routes>
+					<Route path="/" element={<LandingPage />} />
+				</Routes>
+			</div>
+
+			<footer className="footer">Elle Ordoña 2023</footer>
 		</div>
 	);
 }

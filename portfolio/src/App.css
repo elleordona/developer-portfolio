@@ -6,3 +6,15 @@
   background: #F9F3F3;
   color: #382039;
 }
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.main{
+  margin-top: 10vh;
+}
