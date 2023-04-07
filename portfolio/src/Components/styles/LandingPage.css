@@ -1,0 +1,11 @@
+.aboutMeBtn {
+color: #d7a2a8;
+}
+
+.aboutMeBtn:hover {
+    color: #dc6782;
+}
+
+.img {
+    max-width: 18vw;
+}
