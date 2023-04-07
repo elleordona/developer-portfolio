@@ -1,13 +1,10 @@
 
 .link {
-    color: #FFA1CF;
+    color: #d7a2a8;
     
 }
 
 .link:hover {
-    color: #951556;
+    color: #dc6782;
 }
 
-.nav-brand{
-    color:#F4ABC4;
-}

@@ -11,14 +11,13 @@ function App() {
 			<header>
 				<AppNavbar />
 			</header>
-
 			<div className="main">
 				<Routes>
 					<Route path="/" element={<LandingPage />} />
 				</Routes>
 			</div>
 
-			<footer className="footer">Elle Ordoña 2023</footer>
+			<footer className="footer mx-10vw">Elle Ordoña 2023</footer>
 		</div>
 	);
 }
