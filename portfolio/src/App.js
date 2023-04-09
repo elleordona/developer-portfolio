@@ -17,8 +17,8 @@ function App() {
 					<Routes>
 						<Route path="/" element={<LandingPage />} />
 					</Routes>
-					<footer className="footer mx-10vw">Elle Ordoña 2023</footer>
 				</div>
+				<footer className="footer">Elle Ordoña 2023</footer>
 			</Stack>
 		</div>
 	);

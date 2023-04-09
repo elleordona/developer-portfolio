@@ -1,22 +1,22 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .white-content {
   background: #dcd1d5;
-  color: #696969;
+  color: #2f2f2f;
 }
 
 .footer{
-  position: fixed;
+  /* position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
   text-align: center;
+  margin: 10px 0;
 }
 
 .main{
-  margin-top: 10vh;
-  margin-left: 8%;
-  margin-right: 13%;
+  margin: 0 10vw;
+  margin-top: 8%;
 }
