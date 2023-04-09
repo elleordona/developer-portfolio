@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import AppNavbar from './Components/Navbar';
 import LandingPage from './Components/LandingPage';
-import DarkModeButton from './Components/DarkModeButton';
+import Footer from './Components/Footer';
 
 function App() {
 	return (
@@ -16,10 +16,7 @@ function App() {
 					<Route path="/" element={<LandingPage />} />
 				</Routes>
 			</div>
-			<footer className="footer">
-				Elle Ordoña 2023
-				<DarkModeButton />
-			</footer>
+			<Footer />
 		</div>
 	);
 }
