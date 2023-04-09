@@ -10,12 +10,12 @@ function App() {
 	return (
 		<div className="App">
 			<AppNavbar />
-
 			<div className="main">
 				<Routes>
 					<Route path="/" element={<LandingPage />} />
 				</Routes>
 			</div>
+			<hr />
 			<Footer />
 		</div>
 	);
