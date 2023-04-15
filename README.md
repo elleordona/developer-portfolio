@@ -13,3 +13,5 @@ This website shows my journey of development and gives you access to different p
 - JavaScript
 - MongoDB
 - React.js
+- CSS
+- React Bootstrap
