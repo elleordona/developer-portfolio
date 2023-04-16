@@ -14,4 +14,7 @@ This website shows my journey of development and gives you access to different p
 - MongoDB
 - React.js
 - CSS
+- Bootstrap
 - React Bootstrap
+- React Router
+- Font Awesome
