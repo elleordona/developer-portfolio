@@ -1,4 +1,4 @@
-// Wrapper for the app to toggle dark/light mode
+//* Wrapper for the app to toggle dark/light mode
 
 // imports
 import React, { useState, useEffect } from 'react';
