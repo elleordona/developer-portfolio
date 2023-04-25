@@ -18,3 +18,4 @@ This website shows my journey of development and gives you access to different p
 - React Bootstrap
 - React Router
 - Font Awesome
+- Axios
