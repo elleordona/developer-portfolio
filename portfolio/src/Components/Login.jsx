@@ -1,15 +1,15 @@
 //* Login Component
 
 // imports
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import authService from '../utils/auth.service';
 import validationService from '../utils/validation.serviceHelpers';
 
 const Login = () => {
-	const form = useRef();
-	const checkBtn = useRef();
+	// const form = useRef();
+	// const checkBtn = useRef();
 
 	const [username, setUsername] = useState(``);
 	const [password, setPassword] = useState(``);
@@ -34,9 +34,10 @@ const Login = () => {
 		setMessage(``);
 		setLoading(true);
 
-		form.current.validateAll();
+		// form.current.validateAll();
 
-		if (checkBtn.current.context._errors.length === 0) {
+		// if (checkBtn.current.context._errors.length === 0) {
+		if (username && password) {
 			const login = await authService.login(username, password);
 			if (localStorage.getItem(`user`)) {
 				navigate(`/profile`);
@@ -52,7 +53,7 @@ const Login = () => {
 	};
 
 	return (
-		<div className="card w-50 mx-auto text-center justify-content-center p-4">
+		<div className="card w-75 mx-auto text-center justify-content-center p-4">
 			<h3>Login to your Account</h3>
 			<form onSubmit={handleLogin}>
 				<div className="form-group">
