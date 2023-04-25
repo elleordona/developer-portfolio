@@ -3,6 +3,7 @@
 // imports
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './styles/Login.css';
 
 import authService from '../utils/auth.service';
 import validationService from '../utils/validation.serviceHelpers';
@@ -64,8 +65,8 @@ const Login = () => {
 					<label htmlFor="password">Password:</label>
 					<input type="password" name="password" id="password" value={password} onChange={onChangePassword} validations={[validationService.required]} className="mb-2 form-control" />
 				</div>
-				<div className="form-group">
-					<button className="btn" type="submit" disabled={loading}>
+				<div className="form-group mt-2">
+					<button className="btn btn-dark" type="submit" disabled={loading}>
 						{loading && <span className="spinner-border spinner-border-sm"></span>}
 						<span>Login</span>
 					</button>
