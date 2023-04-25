@@ -4,7 +4,8 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URI = `${process.env.REACT_APP_DB}/api/`;
+const API_URI = `https://portfolio-backend-4svs.onrender.com/api/`;
+// const API_URI = `http://localhost:4000/api/`;
 
 const getPublicContent = () => {
 	return axios.get(`${API_URI}all`);

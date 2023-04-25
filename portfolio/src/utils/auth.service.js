@@ -3,7 +3,8 @@
 // imports
 import axios from 'axios';
 
-const API_URI = `${process.env.REACT_APP_DB}/api/auth/`;
+const API_URI = `https://portfolio-backend-4svs.onrender.com/api/auth/`;
+// const API_URI = `http://localhost:4000/api/auth/`;
 
 const register = async (name, username, password, email) => {
 	try {

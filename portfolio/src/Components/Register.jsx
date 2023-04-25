@@ -3,6 +3,7 @@
 // imports
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './styles/Login.css';
 
 import authService from '../utils/auth.service';
 import validationService from '../utils/validation.serviceHelpers';
@@ -51,8 +52,8 @@ const Register = () => {
 
 		// form.current.validateAll();
 
-		if (username && password && email) {
-			const register = await authService.register(username, email, password);
+		if (name && username && password && email) {
+			const register = await authService.register(name, username, password, email);
 			if (register.message) {
 				setMessage(register.message);
 				setSuccessful(true);
@@ -86,7 +87,7 @@ const Register = () => {
 							<input type="password" name="password" id="password" className="form-control" value={password} onChange={onChangePassword} validations={[validationService.required, validationService.validPassword]} />
 						</div>
 						<div className="form-group">
-							<button type="submit" className="btn">
+							<button type="submit" className="btn btn-dark mt-2">
 								Sign Up
 							</button>
 						</div>
