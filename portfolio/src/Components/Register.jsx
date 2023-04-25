@@ -11,11 +11,17 @@ const Register = () => {
 	// const form = useRef();
 	// const checkBtn = useRef();
 
+	const [name, setName] = useState(``);
 	const [username, setUsername] = useState(``);
 	const [email, setEmail] = useState(``);
 	const [password, setPassword] = useState(``);
 	const [successful, setSuccessful] = useState(false);
 	const [message, setMessage] = useState(``);
+
+	const onChangeName = (e) => {
+		const name = e.target.value;
+		setName(name);
+	};
 
 	const onChangeUsername = (e) => {
 		const username = e.target.value;
@@ -63,6 +69,10 @@ const Register = () => {
 			<form onSubmit={handleRegister}>
 				{!successful && (
 					<div>
+						<div className="form-group">
+							<label htmlFor="name">Name:</label>
+							<input type="text" name="name" id="name" className="form-control" value={name} onChange={onChangeName} validations={[validationService.required]} />
+						</div>
 						<div className="form-group">
 							<label htmlFor="username">Username:</label>
 							<input type="text" name="username" id="username" className="form-control" value={username} onChange={onChangeUsername} validations={[validationService.required, validationService.validUsername]} />
