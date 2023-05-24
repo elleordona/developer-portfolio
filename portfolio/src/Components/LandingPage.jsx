@@ -10,7 +10,7 @@ import Container from 'react-bootstrap/Container';
 // import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import './styles/LandingPage.css';
-import picOfMe from '../images/Asuna_SAO.png';
+import picOfMe from '../images/me.jpg';
 
 const LandingPage = () => {
 	return (
