@@ -6,7 +6,7 @@ import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Container } from 'react-boo
 
 import './styles/Navbar.css';
 
-const AppNavbar = () => {
+const AppNavbar = ({ showModBoard, showAdminBoard, currentUser, logOut }) => {
 	return (
 		<Navbar collapseOnSelect expand="lg" className="navbar">
 			<Container>
@@ -33,11 +33,35 @@ const AppNavbar = () => {
 								About Me
 							</NavLink>
 						</NavItem>
+
 						<NavItem>
 							<NavLink className="link" href="/contact">
 								Contact
 							</NavLink>
 						</NavItem>
+
+						{currentUser ? (
+							<>
+								<NavItem>
+									<NavLink className="link" href="/profile">
+										{currentUser.username}
+									</NavLink>
+								</NavItem>
+								<NavItem>
+									<NavLink className="link" href="/login">
+										Log Out
+									</NavLink>
+								</NavItem>
+							</>
+						) : (
+							<>
+								<NavItem>
+									<NavLink className="link" href="/login">
+										Login
+									</NavLink>
+								</NavItem>
+							</>
+						)}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
